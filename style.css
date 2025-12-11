@@ -107,6 +107,8 @@ section h2 {
     letter-spacing: 0.1rem;
     text-indent: 30px;
     text-align: justify;
+    padding-rigth: 10px;
+    padding-left: 10px;
 }
 
 /* SERVIÇOS */
@@ -211,3 +213,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
