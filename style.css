@@ -1,0 +1,213 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #2c3e50;
+    background: #f7f7f7;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1a1f25;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c7a97b;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background: url("direito.png") no-repeat center/cover;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.cta-btn {
+    background: #c7a97b;
+    padding: 14px 32px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 25px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #a78357;
+}
+
+/* SEÇÕES */
+section {
+    padding: 60px 0;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    color: #1a1f25;
+}
+
+.texto{
+    letter-spacing: 0.1rem;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+/* SERVIÇOS */
+.servicos-lista {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.servicos-lista li {
+    width: 30%;
+    text-align: center;
+}
+
+.servicos-lista h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* CONTATO NOVO */
+.contato {
+    background: #e8e8e8;
+}
+
+.contato-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contato-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #c7a97b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contato-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.btn-contato {
+    display: inline-block;
+    background: #1a1f25;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    background: #c7a97b;
+    color: #1a1f25;
+}
+
+/* RODAPÉ */
+footer {
+    background: #1a1f25;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: #1a1f25;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .servicos-lista {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .servicos-lista li {
+        width: 100%;
+    }
+
+    .contato-box {
+        grid-template-columns: 1fr;
+    }
+}
